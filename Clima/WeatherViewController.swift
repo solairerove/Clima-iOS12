@@ -65,9 +65,10 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate, Change
         }
     }
 
+    // control + command + space
     func updateUIWithWeatherData() {
         cityLabel.text = weatherDataModel.city
-        temperatureLabel.text = "\(weatherDataModel.temperature)"
+        temperatureLabel.text = "\(weatherDataModel.temperature)°"
         weatherIcon.image = UIImage(named: weatherDataModel.weatherIconName)
     }
 
@@ -91,7 +92,9 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate, Change
     }
 
     func userEnteredNewCity(city: String) {
-        print(city)
+        let params: [String: String] = ["q": city, "appid": APP_ID]
+
+        getWeatherData(url: WEATHER_URL, parameters: params)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
