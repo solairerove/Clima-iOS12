@@ -59,7 +59,7 @@
                                             <constraint firstAttribute="width" constant="269" id="JU0-xy-RBy"/>
                                             <constraint firstAttribute="height" constant="94" id="bSX-HH-pWl"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="30"/>
                                         <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
